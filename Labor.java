@@ -5,6 +5,14 @@ public class Labor
     private boolean beamer;
     private int platze;
     
+    //Constructor
+    public Labor(String newGebaude, int newStock, boolean newBeamer, int newPlatze)
+    {
+        setGebaude(newGebaude);
+        setStock(newStock);
+        setBeamer(newBeamer);
+        setPlatze(newPlatze);
+    }
     public void setGebaude(String newGebaude)
     {
         gebaude = newGebaude;
