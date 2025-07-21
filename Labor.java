@@ -60,4 +60,9 @@ public class Labor
     {
         return platze;
     }
+    public void printLabor()
+    {
+    System.out.println("Gebäude: " + gebaude + ", Stockwerk: " + stock + " Stock, Beamer: " + beamer + " ja, es gibt Beamer, Platzanzahl: " + platze + " Plätze sind vorhanden."
+    );
+    }
     }
