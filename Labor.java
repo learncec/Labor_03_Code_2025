@@ -9,57 +9,52 @@ public class Labor
     /*
      * It is creating a new Instance of the class Labor.
      */
-    public Labor(String newGebaude, int newStock, boolean newBeamer, int newPlatze)
+    public Labor(String gebaude, int stock, boolean beamer, int platze)
     {
-        setGebaude(newGebaude);
-        setStock(newStock);
-        setBeamer(newBeamer);
-        setPlatze(newPlatze);
+        setGebaude(gebaude);
+        setStock(stock);
+        setBeamer(beamer);
+        setPlatze(platze);
     }
     
-    public void setGebaude(String newGebaude)
+    public void setGebaude(String gebaude)
     {
         // set the property gebaude to the value of the parameter newGebaude.
-        gebaude = newGebaude;
+        this.gebaude = gebaude;
     }
-    
-    public void setStock(int newStock)
+        public void setStock(int stock)
     {
         // set the property stock to the value of the parameter newStock.
-        stock = newStock;
+        this.stock = stock;
     }
-    
-    public void setBeamer(boolean newBeamer)
+        public void setBeamer(boolean beamer)
     {
         // set the property beamer to the value of the newBeamer.
-        beamer = newBeamer;
+        this.beamer = beamer;
     }
-    
-    public void setPlatze(int newPlatze)
+        public void setPlatze(int platze)
     {
         // set the property platze to the value of the newPlatze.
-        platze = newPlatze;
+        this.platze = platze;
     }
     
     public String getGebaude()
     {
         return gebaude;
     }
-    
-    public int getStock()
+        public int getStock()
     {
         return stock;
     }
-    
-    public boolean getBeamer()
+        public boolean getBeamer()
     {
         return beamer;
     }
-    
-    public int getPlatze()
+        public int getPlatze()
     {
         return platze;
     }
+    
     public void printLabor()
     {
     System.out.println("Gebäude: " + gebaude + ", Stockwerk: " + stock + " Stock, Beamer: " + beamer + " ja, es gibt Beamer, Platzanzahl: " + platze + " Plätze sind vorhanden."
