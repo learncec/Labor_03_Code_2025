@@ -16,6 +16,34 @@ public class Labor
         setBeamer(beamer);
         setPlatze(platze);
     }
+    public Labor(String gebaude, int stock, boolean beamer)
+    {
+        setGebaude(gebaude);
+        setStock(stock);
+        setBeamer(beamer);
+        setPlatze(25);
+    }
+    public Labor(String gebaude, int stock, int platze)
+    {
+        setGebaude(gebaude);
+        setStock(stock);
+        setBeamer(true);
+        setPlatze(platze);
+    }
+    public Labor(int stock)
+    {
+        setGebaude("B");
+        setStock(stock);
+        setBeamer(true);
+        setPlatze(25);
+    }
+    public Labor()
+    {
+        setGebaude("B");
+        setStock(2);
+        setBeamer(true);
+        setPlatze(25);
+    }
     
     public void setGebaude(String gebaude)
     {
@@ -55,9 +83,15 @@ public class Labor
         return platze;
     }
     
+    //ifAbfrage:Eigenschaft:beamer/ kein beamer
     public void printLabor()
     {
-    System.out.println("Gebäude: " + gebaude + ", Stockwerk: " + stock + " Stock, Beamer: " + beamer + " ja, es gibt Beamer, Platzanzahl: " + platze + " Plätze sind vorhanden."
-    );
+     if(beamer == true)
+        {
+            System.out.println("Gebäude: " + gebaude + ", Stockwerk: " + stock + ".Stock, und ja, es gibt Beamer, Platzanzahl: " + platze + " Plätze sind vorhanden.");
+        }
+        else{
+         System.out.println("Gebäude: " + gebaude + ", Stockwerk: " + stock + ".Stock, und nein, es gibt kein Beamer, Platzanzahl: " + platze + " Plätze sind vorhanden.");   
+        }
     }
     }
